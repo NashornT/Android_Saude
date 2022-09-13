@@ -20,14 +20,12 @@ class imcActivity : AppCompatActivity(R.layout.activity_imc) {
         lateinit var altura:Any
         lateinit var peso: Any
 
-
         val button = findViewById<Button>(R.id.btn_verificar)
         val inputPeso = findViewById<TextInputEditText>(R.id.txtPeso)
         val inputAltura = findViewById<TextInputEditText>(R.id.txtAltura)
         var resultado = findViewById<TextView>(R.id.txt_Resultado)
 
         button.isEnabled = false
-
 
         inputPeso.doAfterTextChanged{
             peso = it.toString()
@@ -40,15 +38,7 @@ class imcActivity : AppCompatActivity(R.layout.activity_imc) {
                 button.isEnabled = true
             }
 
-
-
         }
-
-
-
-
-
-
 
         button.setOnClickListener {
 
@@ -60,23 +50,21 @@ class imcActivity : AppCompatActivity(R.layout.activity_imc) {
 
             if (conta < 16) {
                 imc = "Magreza grave"
-            } else if (conta > 16 && conta < 17) {
+            } else if (conta >= 16 && conta < 17) {
                 imc = "Magreza moderada"
-            } else if (conta > 17 && conta < 18.5) {
+            } else if (conta >= 17 && conta < 18.5) {
                 imc = "Magreza leve"
-            } else if (conta > 18.5 && conta < 25) {
+            } else if (conta >= 18.5 && conta < 25) {
                 imc = "Saudável"
-            } else if (conta > 25 && conta < 30) {
+            } else if (conta >= 25 && conta < 30) {
                 imc = "Sobrepeso"
-            } else if (conta > 30 && conta < 35) {
+            } else if (conta >= 30 && conta < 35) {
                 imc = "Obesidade Grau I"
-            } else if (conta > 35 && conta < 40) {
+            } else if (conta >= 35 && conta < 40) {
                 imc = "Obesidade Grau II (severa)"
             } else {
                 imc = "Obesidade Grau III (mórbida)"
             }
-
-
 
             resultado.setText("IMC: ${conta.roundToInt()} , $imc")
         }
