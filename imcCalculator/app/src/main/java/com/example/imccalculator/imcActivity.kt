@@ -9,6 +9,7 @@ import androidx.core.widget.doAfterTextChanged
 import androidx.core.widget.doOnTextChanged
 import com.google.android.material.textfield.TextInputEditText
 import kotlin.math.roundToInt
+import kotlin.math.roundToLong
 
 class imcActivity : AppCompatActivity(R.layout.activity_imc) {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -62,11 +63,13 @@ class imcActivity : AppCompatActivity(R.layout.activity_imc) {
                 imc = "Obesidade Grau I"
             } else if (conta >= 35 && conta < 40) {
                 imc = "Obesidade Grau II (severa)"
-            } else {
+            } else if (conta >= 40  ) {
                 imc = "Obesidade Grau III (mórbida)"
+            }else{
+                imc = "nada"
             }
 
-            resultado.setText("IMC: ${conta.roundToInt()} , $imc")
+            resultado.setText("IMC: ${"%.2f".format(conta)} , $imc")
         }
 
     }
