@@ -5,6 +5,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
+    android:background="@color/azul_inf"
     android:layout_height="match_parent">
 
     <LinearLayout
@@ -22,6 +23,7 @@
             android:id="@+id/txt_Resultado"
             android:layout_width="match_parent"
             android:layout_height="107dp"
+            android:textColor="@color/laranja_inf"
             android:text="IMC"
             android:textAlignment="center"
             android:textSize="20sp"
@@ -32,6 +34,7 @@
 
         <com.google.android.material.textfield.TextInputLayout
             android:layout_width="match_parent"
+            android:textColorHint="@color/laranja_inf"
             android:layout_height="match_parent">
 
             <com.google.android.material.textfield.TextInputEditText
@@ -39,21 +42,26 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="16dp"
-                android:inputType="numberDecimal"
-                android:hint="Peso (kg)" />
+                android:background="@color/azul_inf"
+                android:textColor="@color/laranja_inf"
+                android:hint="Peso (kg)"
+                android:inputType="numberDecimal" />
         </com.google.android.material.textfield.TextInputLayout>
 
         <com.google.android.material.textfield.TextInputLayout
             android:layout_width="match_parent"
             android:layout_margin="16dp"
+            android:textColorHint="@color/laranja_inf"
             android:layout_height="match_parent">
 
             <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/txtAltura"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:inputType="numberDecimal"
-                android:hint="Altura (m)" />
+                android:background="@color/azul_inf"
+                android:textColor="@color/laranja_inf"
+                android:hint="Altura (m)"
+                android:inputType="numberDecimal" />
 
         </com.google.android.material.textfield.TextInputLayout>
 
@@ -62,6 +70,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="32dp"
+            android:backgroundTint="@color/laranja_inf"
             android:text="verificar" />
 
 

@@ -3,6 +3,7 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/gusta/AndroidStudioProjects/imcCalculator/app/src/main/res/drawable/ic_baseline_accessibility_24.xml" value="0.175" />
         <entry key="..\:/Users/gusta/AndroidStudioProjects/imcCalculator/app/src/main/res/layout/activity_imc.xml" value="0.22826086956521738" />
         <entry key="..\:/Users/gusta/AndroidStudioProjects/imcCalculator/app/src/main/res/layout/activity_main.xml" value="0.22826086956521738" />
       </map>
